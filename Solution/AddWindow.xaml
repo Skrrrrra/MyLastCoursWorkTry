@@ -1,0 +1,38 @@
+﻿<Window x:Class="MyLastCoursWorkTry.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyLastCoursWorkTry"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="500" Width="800" ResizeMode="NoResize">
+    <Grid Background="Lavender">
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,70,0,0">Имя</TextBlock>
+        <TextBox FontStyle="Italic" Name="namebox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,95,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,0,0,0">Фамилия</TextBlock>
+        <TextBox FontStyle="Italic" Name="secondnamebox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,30,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,135,0,0">Отчество</TextBlock>
+        <TextBox FontStyle="Italic" Name="thirdnamebox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,160,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,205,0,0">Группа</TextBlock>
+        <TextBox FontStyle="Italic" Name="gradebox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="10,234,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="300" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,0,0,0" Width="232">Оценка по математике</TextBlock>
+        <TextBox FontStyle="Italic" Name="mathbox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,30,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="300" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,70,0,0">Оценка по русскому языку</TextBlock>
+        <TextBox FontStyle="Italic" Name="russianlangbox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,95,0,0"></TextBox>
+
+        <TextBlock FontStyle="Italic" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="300" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,135,0,0">Оценка по иностранному языку</TextBlock>
+        <TextBox FontStyle="Italic" Name="englishlangbox" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="245,160,0,0"></TextBox>
+
+        <Calendar x:Name="calendar1" FirstDayOfWeek="Monday" Margin="-67,213,67,-213"></Calendar>
+
+        <Button FontStyle="Italic" Background="White" Click="savebutton_Click" MinHeight="40" MinWidth="350" MaxHeight="40" MaxWidth="350" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="440,370,0,0">Добавить студента в базу данных</Button>
+
+        <Button FontStyle="Italic" Background="White" Click="backbutton_Click" MinHeight="40" MinWidth="200" MaxHeight="40" MaxWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="440,415,0,0">Назад</Button>
+
+    </Grid>
+</Window>
